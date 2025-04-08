@@ -16,14 +16,12 @@ public class Isogram {
      */
     public boolean isIsogram(String str){
         Set<Character> test = new HashSet<>();
-
         for (char character : str.toCharArray()) {
             if (test.contains(character)) {
-                return false;
+                return false; //return false if str is not an isogram
             }
             test.add(character);
         }
-        return true;
-        
+        return true;    //return true if str is an isogram.
     }
 }

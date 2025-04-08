@@ -17,11 +17,11 @@ public class Isogram {
     public boolean isIsogram(String str){
         Set<Character> test = new HashSet<>();
 
-        for (char c : str.toCharArray()) {
-            if (test.contains(c)) {
+        for (char ch : str.toCharArray()) {
+            if (test.contains(ch)) {
                 return false;
             }
-            test.add(c);
+            test.add(ch);
         }
 
         return true;

@@ -23,7 +23,6 @@ public class Isogram {
             }
             test.add(character);
         }
-
         return true;
         
     }
